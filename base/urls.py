@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
 from base import views
+from base.views import getImages,index
 
 urlpatterns = [
-    path('/', views.index),
+    path('', index),
+    path('get_images', getImages),
 ]
 
 
