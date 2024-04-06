@@ -36,10 +36,10 @@ class MyTokenObtainPairView(TokenObtainPairView):
 def getImages(request):
     res=[] #create an empty list
     for img in Product.objects.all(): #run on every row in the table...
-        res.append({"title":img.title,
+        res.append({"name":img.name,
                 "description":img.description,
                 "completed":False,
-               "image":str( img.image)
+               "image":str(img.image)
                 }) #append row by to row to res list
     return Response(res) #return array as json response
 
