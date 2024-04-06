@@ -1,1 +1,15 @@
+# Ignore virtual environment directories
+venv/
 .env
+
+# Ignore any compiled Python files
+*.pyc
+
+# Ignore Django's migration files
+**/migrations/
+
+# Ignore local development settings file
+local_settings.py
+
+# Ignore Docker related files
+.dockerignore
