@@ -132,7 +132,7 @@ DATABASES = {
         'NAME': 'shop',
         'USER': 'root',
         'PASSWORD': '123',
-        'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
+        'HOST': 'host.docker.internal',
         'PORT': '3306',  # The default port for MySQL
     }
 }
